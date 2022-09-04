@@ -1,0 +1,7 @@
+[Default]
+save_dir=$HOME/Desktop
+save_filename=swappy-%Y%m%d-%H%M%S.png
+show_panel=true
+line_size=2
+text_size=12
+

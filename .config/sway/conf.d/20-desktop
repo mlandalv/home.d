@@ -1,0 +1,42 @@
+# Specific settings for my desktop.
+#
+# Place this file in ~/.config/sway/conf.d/10-desktop
+
+### Output configuration
+output * bg /home/martin/Documents/wallpapers/an_ocean_apart.jpg fill
+
+# LG 38GN950
+output DP-1 {
+    mode 3840x1600@143.998Hz
+    #adaptive_sync on
+}
+
+### Input configuration
+#
+# Example configuration:
+#
+#   input "2:14:SynPS/2_Synaptics_TouchPad" {
+#       dwt enabled
+#       tap enabled
+#       natural_scroll enabled
+#       middle_emulation enabled
+#   }
+#
+# You can get the names of your inputs by running: swaymsg -t get_inputs
+# Read `man 5 sway-input` for more information about this section.
+
+input "type:pointer" {
+    accel_profile flat
+    pointer_accel 0
+}
+
+# Xtrfy M42
+input "11944:8707:Wings_Tech_Xtrfy_M42" {
+    pointer_accel -0.2
+}
+
+# Anker vertical USB mouse
+input "7119:5:USB_Optical_Mouse" {
+    pointer_accel -0.25
+}
+

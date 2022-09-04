@@ -1,0 +1,40 @@
+theme = "solarized-dark"
+icons = "awesome6"
+
+[[block]]
+block = "taskwarrior"
+interval = 600
+format = "{count} open tasks ({filter_name})"
+format_singular = "{count} open task ({filter_name})"
+format_everything_done = "all tasks done ({filter_name})"
+warning_threshold = 10
+critical_threshold = 20
+[[block.filters]]
+name = "all projects"
+filter = "-COMPLETED -DELETED"
+
+[[block]]
+block = "temperature"
+collapsed = false
+interval = 10
+format = "{min} min, {max} max"
+chip = "k10temp-pci-00c3"
+inputs = ["Tctl", "Tdie", "Tccd1", "Tccd2"]
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "keyboard_layout"
+driver = "sway"
+format = "{layout}"
+[block.mappings]
+"English2" = "us"
+"Swedish2" = "se"
+
+[[block]]
+block = "time"
+interval = 10
+format = "%a %F %R"
+locale = "sv_SE"
+

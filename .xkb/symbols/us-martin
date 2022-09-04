@@ -1,0 +1,11 @@
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+    include "us(basic)"
+    name[Group1]= "English (US, Martin ed.)";
+
+    key <BKSL> {[ backslash,        bar,      aring,      Aring	]}; // å
+    key <AC10> {[ semicolon,	  colon, odiaeresis, Odiaeresis	]}; // ä
+    key <TLDE> {[     grave, asciitilde, adiaeresis, Adiaeresis	]}; // ö
+
+    include "level3(ralt_switch)"
+};
