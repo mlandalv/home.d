@@ -1,0 +1,34 @@
+[user]
+	name = Martin Landälv
+	email = martin@landalv.se
+[merge]
+	tool = meld
+[diff]
+	tool = meld
+	colorMoved = zebra
+[push]
+	default = simple
+	autoSetupRemote = true
+[alias]
+	lga = log --decorate --oneline --graph --all
+	st = status -s
+	lgas = log --decorate --oneline --graph --all --max-count=20
+	ba = branch --all
+	lgs = log --decorate --oneline --graph --max-count=20
+	lg = log --decorate --oneline --graph
+[mergetool]
+	keepBackup = false
+[core]
+	editor = vim
+[pull]
+	rebase = false
+[mergetool "webstorm"]
+	cmd = /opt/webstorm/bin/webstorm.sh merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true
+[difftool "webstorm"]
+	trustExitCode = true
+	cmd = /opt/webstorm/bin/webstorm.sh diff \"$LOCAL\" \"$REMOTE\"
+[init]
+	defaultBranch = master
+[fetch]
+	prune = true
