@@ -19,7 +19,7 @@ collapsed = false
 interval = 10
 format = "{min} min, {max} max"
 chip = "k10temp-pci-00c3"
-inputs = ["Tctl", "Tdie", "Tccd1", "Tccd2"]
+inputs = ["Tctl", "Tccd1", "Tccd2"]
 
 [[block]]
 block = "sound"
@@ -28,9 +28,6 @@ block = "sound"
 block = "keyboard_layout"
 driver = "sway"
 format = "{layout}"
-[block.mappings]
-"English2" = "us"
-"Swedish2" = "se"
 
 [[block]]
 block = "time"
