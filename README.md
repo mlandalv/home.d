@@ -13,6 +13,7 @@ A few packages used:
 - slurp (for selecting parts of the screen)
 - grim (taking screenshot)
 - i3status-rust
+- mako (notifications in sway)
 - lxsession (escalate permission?)
 - libnotify
 - fish
@@ -31,6 +32,6 @@ The plugins should then be installed to `.vim/plugged`. Restart vim and then goo
 
 Terminal: foot  
 Menu: wofi  
-Status bar: i3status-rust
+Status bar: i3status-rust  
 Notification daemon: mako  
 
