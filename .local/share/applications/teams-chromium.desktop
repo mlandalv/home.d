@@ -1,0 +1,6 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Teams (Chromium)
+Exec=chromium --app=https://teams.microsoft.com
+

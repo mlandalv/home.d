@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+
+if [ $(pidof wf-recorder) ]; then
+    killall --wait --signal SIGINT wf-recorder
+else
+    notify-send "wf-recorder" "No recording started."
+fi
+
