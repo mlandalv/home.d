@@ -17,7 +17,7 @@ filter = "-COMPLETED -DELETED"
 block = "temperature"
 collapsed = false
 interval = 10
-format = "{min} min, {max} max"
+format = "{average} avg"
 chip = "nvme-pci-0100"
 inputs = ["Composite"]
 
