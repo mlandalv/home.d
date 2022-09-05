@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 export TERMINAL=foot
 export BROWSER=firefox
@@ -10,21 +11,17 @@ export EDITOR=vim
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 export MOZ_ENABLE_WAYLAND=1
-#export MOZ_WEBRENDER=1
-#export MOZ_ACCELERATED=1
 
 # Multiple firefox instances share the same renderer or something?_?
-export MOZ_DBUS_REMOTE=1
+# export MOZ_DBUS_REMOTE=1
 
 # Tell sway to use logind.
 #export LIBSEAT_BACKEND="logind"
 
 export QT_QPA_PLATFORM=wayland
 
-# Om amdvlk är installerad, defaulta till RADV
+# If amdvlk is installed, default to RADV anyways.
 export AMD_VULKAN_ICD=RADV
-
-alias docker=podman
 
 eval $(ssh-agent)
 
