@@ -7,6 +7,7 @@ Currently used for one AMD desktop and one Intel (Dell XPS) laptop. Both run Arc
 A few packages used:
 
 - sway
+- fuzzel
 - wf-recorder
 - swappy (editing image)
 - wl-clipboard
