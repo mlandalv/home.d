@@ -20,11 +20,12 @@ set $term foot
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu fuzzel \
+          --no-fuzzy \
           --width=50 \
           --lines=15 \
-          --background-color=000000dd \
+          --background-color=000000ee \
           --text-color=ffffffff \
-          --selection-color=111111ff \
+          --selection-color=333333ff \
           --selection-text-color=ffffffff | xargs swaysmg exec --
 
 ### Output configuration
