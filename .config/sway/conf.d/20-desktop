@@ -3,7 +3,7 @@
 # Place this file in ~/.config/sway/conf.d/10-desktop
 
 ### Output configuration
-output * bg /home/martin/Documents/wallpapers/an_ocean_apart.jpg fill
+output * bg /home/martin/Documents/wallpapers/peaceful-wallpaper-3840x1600.jpg fill
 
 # LG 38GN950
 output DP-1 {
