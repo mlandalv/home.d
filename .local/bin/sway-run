@@ -5,7 +5,7 @@ export TERMINAL=foot
 export BROWSER=firefox
 export XDG_CURRENT_DESKTOP=sway
 export GTK_THEME=Adwaita:dark
-export EDITOR=vim
+export EDITOR=nvim
 
 # JetBrains IDE JAVA fix.
 export _JAVA_AWT_WM_NONREPARENTING=1
