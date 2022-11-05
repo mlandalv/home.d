@@ -240,10 +240,14 @@ bar {
 # Martinspecialare
 
 input "type:keyboard" {
-    xkb_layout martin(us)
+    xkb_layout us(altgr-intl)
     xkb_numlock enable
     repeat_delay 300
     repeat_rate 30
+}
+
+input "4176:16:Yubico_Yubico_Yubikey_II" {
+    xkb_layout us
 }
 
 input "type:pointer" {
