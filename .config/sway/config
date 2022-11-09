@@ -270,6 +270,7 @@ bindsym $mod+Shift+alt+h move workspace to output left
 
 for_window [shell="xwayland"] title_format "%title [XWayland]"
 for_window [title="Picture-in-Picture"] floating enable
+for_window [app_id="^chrome-"] shortcuts_inhibitor disable
 
 
 # Wayland screen sharing

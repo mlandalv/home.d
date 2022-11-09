@@ -1,2 +1,5 @@
 default-timeout=7000
 
+[body~=^teams\.microsoft\.com]
+on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
+
