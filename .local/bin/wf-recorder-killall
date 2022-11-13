@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
-set -e
 
-if [ $(pidof wf-recorder) ]; then
-    killall --wait --signal SIGINT wf-recorder
-else
+set -o errexit
+set -o nounset
+set -o pipefail
+if [[ "${TRACE-0}" == "1" ]]; then
+    set -o xtrace
+fi
+
+if ! (killall --signal SIGINT wf-recorder); then
     notify-send "wf-recorder" "No recording started."
 fi
 

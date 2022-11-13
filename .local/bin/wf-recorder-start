@@ -1,25 +1,19 @@
 #!/usr/bin/env bash
-set -e
 
-if [ $(pidof wf-recorder) ]; then
+#set -o errexit
+set -o nounset
+set -o pipefail
+if [[ "${TRACE-0}" == "1" ]]; then
+    set -o xtrace
+fi
+
+if [[ "$(pidof wf-recorder)" ]]; then
     notify-send "wf-recorder" "Recording has already started. Aborting!"
     exit 1
 fi
 
-# Start wf-recorder with fullscreen by default.
-# If -g or --geometry is passed then select an area with slurp.
-if [[ "$1" == "--geometry" || "$1" == "-g" ]]; then
-    AREA=$(slurp)
-fi
-
-# Reset counter.
-SECONDS=0
-
-#wf-recorder -g "$AREA" -f ~/Documents/recording.mp4 -c hevc_vaapi -d /dev/dri/renderD128 -t
-
 # Since v0.3.0 wf-recordes asks to overwrite file
-yes | wf-recorder -g "$AREA" -f ~/Documents/recording.mp4 -c h264_vaapi -d /dev/dri/renderD128 -t
-#wf-recorder -g "$AREA" -f ~/Documents/recording.mp4
+yes | wf-recorder -f ~/Documents/recording.mp4 -c h264_vaapi -d /dev/dri/renderD128 -t "$@"
 
 notify-send "wf-recorder" "Recording stopped after $SECONDS seconds."
 

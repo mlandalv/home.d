@@ -260,7 +260,7 @@ bindsym alt+Shift+4 exec grim -g "$(slurp)" - | wl-copy
 bindsym alt+Shift+5 exec grim -g "$(slurp)" - | swappy -f -
 bindsym alt+Shift+3 exec grim
 bindsym alt+Shift+8 exec wf-recorder-start
-bindsym alt+Shift+9 exec wf-recorder-start --geometry
+bindsym alt+Shift+9 exec wf-recorder-start -g "$(slurp)"
 bindsym alt+Shift+0 exec wf-recorder-killall
 
 bindsym $mod+alt+h workspace prev_on_output
