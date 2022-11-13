@@ -8,7 +8,7 @@ export GTK_THEME=Adwaita:dark
 export EDITOR=nvim
 
 # JetBrains IDE JAVA fix.
-export _JAVA_AWT_WM_NONREPARENTING=1
+#export _JAVA_AWT_WM_NONREPARENTING=1
 
 export MOZ_ENABLE_WAYLAND=1
 
@@ -22,6 +22,9 @@ export QT_QPA_PLATFORM=wayland
 
 # If amdvlk is installed, default to RADV anyways.
 export AMD_VULKAN_ICD=RADV
+
+# https://gitlab.freedesktop.org/wlroots/wlroots/-/blob/master/docs/env_vars.md
+#export WLR_RENDERER=vulkan
 
 eval $(ssh-agent)
 
