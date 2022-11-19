@@ -16,23 +16,23 @@ A few packages used:
 - i3status-rust
 - mako (notifications in sway)
 - lxsession (escalate permission?)
-- libnotify
 - fish
 - task (for simple task management)
+- neovim
 
 ## Fish
 
 Add `.local/bin` to path with `fish_add_path -a ~/.local/bin`.
 
-## vim
+## neovim
 
-It should be enough to copy/link `.vim/autoload` and then open vim and run `:PlugUpdate`.
-The plugins should then be installed to `.vim/plugged`. Restart vim and then good to go.
+Add vim-plug (`plug.vim`) to `/home/martin/.local/share/nvim/site/autoload`.
+Start nvim and run `:PlugUpdate`.
 
 ## sway
 
 Terminal: foot  
-Menu: wofi  
+Menu: fuzzel  
 Status bar: i3status-rust  
 Notification daemon: mako  
 

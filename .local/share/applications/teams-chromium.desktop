@@ -4,5 +4,6 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Microsoft Teams (Chromium)
+MimeType=x-scheme-handler/msteams
 Exec=/usr/bin/chromium --profile-directory=Default --app=https://teams.microsoft.com
 

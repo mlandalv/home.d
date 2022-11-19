@@ -27,7 +27,7 @@ block = "sound"
 [[block]]
 block = "keyboard_layout"
 driver = "sway"
-format = "{layout}"
+format = "{layout} (Colemak DH)"
 
 [[block]]
 block = "time"
