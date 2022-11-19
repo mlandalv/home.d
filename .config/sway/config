@@ -263,10 +263,10 @@ bindsym alt+Shift+8 exec wf-recorder-start
 bindsym alt+Shift+9 exec wf-recorder-start -g "$(slurp)"
 bindsym alt+Shift+0 exec wf-recorder-killall
 
-bindsym $mod+alt+h workspace prev_on_output
-bindsym $mod+alt+l workspace next_on_output
-bindsym $mod+Shift+alt+l move workspace to output right
-bindsym $mod+Shift+alt+h move workspace to output left
+bindsym $mod+alt+m workspace prev_on_output
+bindsym $mod+alt+i workspace next_on_output
+bindsym $mod+Shift+alt+m move workspace to output left
+bindsym $mod+Shift+alt+i move workspace to output right
 
 for_window [shell="xwayland"] title_format "%title [XWayland]"
 for_window [title="Picture-in-Picture"] floating enable
