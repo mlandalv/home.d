@@ -1,7 +1,5 @@
 let mapleader = ","
 
-" Install vim-plug to ~/.local/share/nvim/site/autoload/plug.vim
-" Plugins installed to ~/.local/share/nvim/plugged:
 call plug#begin()
 
 Plug 'junegunn/fzf.vim'
@@ -49,4 +47,8 @@ nnoremap <space> za
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 let g:EasyMotion_smartcase = 1 " Turn on case-insensitive feature
 nmap s <Plug>(easymotion-s2)
+
+"set runtimepath^=~/.vim runtimepath+=~/.vim/after
+"let &packpath = &runtimepath
+"source ~/.vimrc
 
