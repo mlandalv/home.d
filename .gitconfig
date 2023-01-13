@@ -19,7 +19,7 @@
 [mergetool]
 	keepBackup = false
 [core]
-	editor = vim
+	editor = nvim
 [pull]
 	rebase = false
 [mergetool "webstorm"]

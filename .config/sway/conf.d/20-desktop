@@ -8,7 +8,7 @@ output * bg /home/martin/Documents/wallpapers/peaceful-wallpaper-3840x1600.jpg f
 # LG 38GN950
 output DP-1 {
     mode 3840x1600@143.998Hz
-    #adaptive_sync on
+    adaptive_sync on
 }
 
 ### Input configuration

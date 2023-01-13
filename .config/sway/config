@@ -47,7 +47,7 @@ set $menu fuzzel \
 #
 exec swayidle -w \
     timeout 900 'swaylock -f -c 000000' \
-    timeout 1200 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+    timeout 1200 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
     before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
