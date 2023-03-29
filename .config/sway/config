@@ -25,6 +25,7 @@ set $menu fuzzel \
           --no-fuzzy \
           --width=50 \
           --lines=15 \
+          --font=monospace:size=12 \
           --background-color=000000ee \
           --text-color=ffffffff \
           --selection-color=333333ff \
