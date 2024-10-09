@@ -22,14 +22,14 @@ set $term foot
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu fuzzel \
-          --no-fuzzy \
           --width=50 \
           --lines=15 \
           --font=monospace:size=12 \
           --background-color=000000ee \
           --text-color=ffffffff \
           --selection-color=333333ff \
-          --selection-text-color=ffffffff | xargs swaysmg exec --
+          --selection-text-color=ffffffff \
+          --counter | xargs swaysmg exec --
 
 ### Output configuration
 #
@@ -269,9 +269,9 @@ bindsym $mod+alt+i workspace next_on_output
 bindsym $mod+Shift+alt+m move workspace to output left
 bindsym $mod+Shift+alt+i move workspace to output right
 
-assign [instance="teams.microsoft.com"] workspace 1
+#assign [instance="teams.microsoft.com"] workspace 1
 #assign [app_id="firefox"] workspace 2
-assign [instance="jetbrains-webstorm"] workspace 3
+#assign [instance="jetbrains-webstorm"] workspace 3
 
 for_window [shell="xwayland"] title_format "%title [XWayland]"
 for_window [title="Picture-in-Picture"] floating enable
