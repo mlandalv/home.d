@@ -4,23 +4,23 @@ theme = "solarized-dark"
 [icons]
 icons = "awesome6"
 
-[[block]]
-block = "taskwarrior"
-interval = 600
-format = "$count open tasks ($filter_name)"
-format_singular = "$count open task ($filter_name)"
-format_everything_done = "all tasks done ($filter_name)"
-warning_threshold = 10
-critical_threshold = 20
-[[block.filters]]
-name = "all projects"
-filter = "-COMPLETED -DELETED"
+#[[block]]
+#block = "taskwarrior"
+#interval = 600
+#format = "$count open tasks ($filter_name)"
+#format_singular = "$count open task ($filter_name)"
+#format_everything_done = "all tasks done ($filter_name)"
+#warning_threshold = 10
+#critical_threshold = 20
+#[[block.filters]]
+#name = "all projects"
+#filter = "-COMPLETED -DELETED"
 
 [[block]]
 block = "temperature"
 #collapsed = false
 interval = 10
-format = "$average avg"
+format = "$average avg "
 chip = "nvme-pci-0100"
 inputs = ["Composite"]
 
@@ -30,12 +30,12 @@ block = "sound"
 [[block]]
 block = "keyboard_layout"
 driver = "sway"
-format = "$layout"
+format = "$layout "
 
 [[block]]
 block = "battery"
 interval = 10
-format = "$percentage $time"
+format = "$percentage "
 
 [[block]]
 block = "time"

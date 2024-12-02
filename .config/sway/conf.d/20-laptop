@@ -15,3 +15,5 @@ input "1267:12753:VEN_04F3:00_04F3:31D1_Touchpad" {
     middle_emulation enabled
 }
 
+output eDP-1 pos 0 0 res 1920x1200
+output DP-3 pos 1920 0 res 2560x1440
