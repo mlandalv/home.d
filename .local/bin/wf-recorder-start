@@ -12,7 +12,7 @@ if [[ "$(pidof wf-recorder)" ]]; then
     exit 1
 fi
 
-wf-recorder -f ~/Documents/recording_$(date +"%Y-%m-%d_%H%M%S").mkv -c hevc_vaapi -d /dev/dri/renderD128 "$@"
+wf-recorder -f ~/Documents/recording_$(date +"%Y-%m-%d_%H%M%S").mkv "$@"
 
 notify-send "wf-recorder" "Recording stopped after $SECONDS seconds."
 
