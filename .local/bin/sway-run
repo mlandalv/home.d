@@ -35,5 +35,5 @@ export AMD_VULKAN_ICD=RADV
 
 eval $(ssh-agent)
 
-sway
+WLR_RENDERER=vulkan sway
 
