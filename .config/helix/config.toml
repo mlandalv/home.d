@@ -1,0 +1,8 @@
+theme = "jetbrains_dark"
+
+[editor.auto-save]
+focus-lost = true
+
+[keys.normal]
+"C-/" = "toggle_line_comments"
+"C-S-/" = "toggle_block_comments"

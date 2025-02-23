@@ -1,0 +1,26 @@
+[[language]]
+name = "typescript"
+roots = ["deno.json", "deno.jsonc"]
+auto-format = true
+language-servers = ["deno-lsp"]
+
+[[language]]
+name = "javascript"
+roots = ["deno.json", "deno.jsonc"]
+auto-format = true
+language-servers = ["deno-lsp"]
+
+[language-server.deno-lsp]
+command = "deno"
+args = ["lsp"]
+config.deno.enable = true
+
+#[[language]]
+#name = "c-sharp"
+#scope = "source.cs"
+#file-types = ["cs"]
+#language-servers = ["omnisharp"]
+
+#[language-server.omnisharp]
+#command = "/home/martin/Downloads/omnisharp/OmniSharp"
+#args = ["-lsp"]
