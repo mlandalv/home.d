@@ -3,12 +3,17 @@
 	email = martin@landalv.se
 [merge]
 	tool = meld
+	conflictstyle = zdiff3
 [diff]
 	tool = meld
-	colorMoved = zebra
+	colorMoved = plain
+	algorithm = histogram
+	mnemonicPrefix = true
+	renames = true
 [push]
 	default = simple
 	autoSetupRemote = true
+	followTags = true
 [alias]
 	lga = log --decorate --oneline --graph --all
 	st = status -s
@@ -20,8 +25,6 @@
 	keepBackup = false
 [core]
 	editor = nvim
-[pull]
-	rebase = false
 [mergetool "webstorm"]
 	cmd = /opt/webstorm/bin/webstorm.sh merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 	trustExitCode = true
@@ -32,3 +35,14 @@
 	defaultBranch = master
 [fetch]
 	prune = true
+	pruneTags = true
+	all = true
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[rebase]
+	updateRefs = true
+	autoSquash = true
+[column]
+	ui = auto

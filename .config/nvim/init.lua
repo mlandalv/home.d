@@ -11,7 +11,7 @@ vim.g.loaded_netrwPlugin = 1
 
 -- Plugin manager (vim-plug)
 vim.call('plug#begin')
-  Plug('nvim-tree/nvim-web-devicons')
+--  Plug('nvim-tree/nvim-web-devicons')
   Plug('junegunn/fzf.vim')
   --Plug('scrooloose/nerdtree')
   --Plug('ryanoasis/vim-devicons') -- file type icons in nerdtree
@@ -19,15 +19,15 @@ vim.call('plug#begin')
   Plug('easymotion/vim-easymotion')
   Plug('vim-airline/vim-airline')
   Plug('sjl/badwolf')
-  Plug('neovim/nvim-lspconfig')
-  Plug('ziglang/zig.vim')
+--  Plug('neovim/nvim-lspconfig')
+--  Plug('ziglang/zig.vim')
   --Plug('romgrk/barbar.nvim')
   --Plug('nvim-tree/nvim-web-devicons') -- file icons barbar
   --Plug('nvim-treesitter/nvim-treesitter')
   --Plug('jreybert/vimagit')
-  Plug('preservim/tagbar')
-  Plug('tpope/vim-surround')
-  Plug('nvimdev/dashboard-nvim')
+--  Plug('preservim/tagbar')
+--  Plug('tpope/vim-surround')
+--  Plug('nvimdev/dashboard-nvim')
 vim.call('plug#end')
 
 -- Disable some warnings when running :checkhealth
@@ -163,6 +163,7 @@ vim.api.nvim_create_autocmd("TabEnter", {
 --  end
 --})
 
+--[[
 local on_attach = function(client, bufnr)
     vim.api.nvim_set_keymap('n', '<C-r><C-r>', '<cmd>lua vim.lsp.buf.rename()<CR>', { noremap = true, silent = true })
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-S-I>', '<cmd>lua vim.lsp.buf.format()<CR>', { noremap = true, silent = true })
@@ -219,4 +220,4 @@ nvim_lsp.zls.setup({
 --  ensure_installed = { "typescript", "tsx", "javascript" },
 --  highlight = { enable = true },
 --})
-
+--]]
