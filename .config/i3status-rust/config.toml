@@ -1,8 +1,8 @@
 [theme]
 theme = "solarized-dark"
 
-[icons]
-icons = "awesome6"
+#[icons]
+#icons = "awesome6"
 
 [[block]]
 block = "focused_window"

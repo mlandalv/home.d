@@ -41,8 +41,8 @@
 	sort = -committerdate
 [tag]
 	sort = version:refname
-[rebase]
-	updateRefs = true
-	autoSquash = true
+#[rebase]
+#	updateRefs = true
+#	autoSquash = true
 [column]
 	ui = auto
